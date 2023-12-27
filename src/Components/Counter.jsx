@@ -9,8 +9,9 @@ function Counter() {
     setCounter(counter+1)
   }
   function decrement(){
-    setCounter(counter-1)
-  }
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }  }
   function reset(){
     setCounter(0)
   }
